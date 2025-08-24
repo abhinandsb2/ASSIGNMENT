@@ -403,6 +403,7 @@ textarea {
   .banner {
     background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
     min-height: 600px;
+    background-repeat: no-repeat;
   }
   .con {
     margin-top: 80px;
@@ -425,6 +426,7 @@ textarea {
   .banner {
     background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
     min-height: 500px;
+    background-repeat: no-repeat;
   }
   .con {
     margin-top: 40px;
