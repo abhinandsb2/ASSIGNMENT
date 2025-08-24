@@ -258,7 +258,7 @@ details p {
 }
 
 .contact-form {
-    flex: 1;
+    flex: 3;
     padding: 40px;
     color: white;
 }
@@ -326,11 +326,10 @@ textarea {
 }
 
 
-
                                         /*----media query----*/
 
                                     /* desktop */
-@media (min-width: 1024px) {
+ @media (min-width: 1024px) { */
   .con {
     margin-top: 200px;
   }
@@ -385,80 +384,76 @@ textarea {
 }
 
 
-                                  /* Medium screens (tablet) */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Medium (Tablet) */
 @media (min-width: 768px) and (max-width: 1023px) {
-
   .banner {
-    position: relative;
     background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
-    background-size: cover;
-    background-position: center;
-    min-height: 777px;
-    background-repeat: no-repeat;
+    min-height: 600px;
   }
-
   .con {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    margin-top: 50px;
+    margin-top: 80px;
+    text-align: center;
   }
-  #div-text {
-    background-color: black;
+  .gallery-img {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
   }
-  #hr { display: none; }
+  .btn-exp {
+    gap: 30px;
+  }
 }
-                                        /* moblie */
+
+/* Small (Mobile) */
 @media (max-width: 767px) {
-    .hr {
-        display: none;
-    }
-
-    /* Navbar Logo */
-    .nav-icon {
-        height: 70px;
-    }
-
-    /* Banner */
-    .banner {
-        position: relative;
-        background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 500px;
-    }
-
-    .con {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        padding: 15px;
-        margin-top: 40px; 
-        text-align: center;
-    }
-
-    .explore h1 {
-        font-size: 50px;
-        line-height: 1.2;
-    }
-
-    .wild h2 {
-        font-size: 35px;
-    }
-}
-
-
-@media (max-width: 481px){
-    .btn-exp {
-        column-gap: 0;
-    }
-
-    .sticky {
-        left: 85%;
-    }
+  .nav-icon {
+    height: 60px;
+  }
+  .banner {
+    background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
+    min-height: 500px;
+  }
+  .con {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+  }
+  .explore h1 { font-size: 40px; }
+  .wild h2 { font-size: 28px; }
+  .btn-exp {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .gallery-img {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+  .faq-container {
+    padding: 0 10px;
+  }
+  summary { font-size: 18px; }
+  details p { font-size: 16px; }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-img {
+    min-height: 200px;
+    width: 100%;
+  }
+  .contact-form {
+    padding: 20px;
+  }
 }
