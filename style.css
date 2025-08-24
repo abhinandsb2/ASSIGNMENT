@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* first section */
+
+#div-text {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+
+  display: flex;              
+  justify-content: center;   
+  align-items: center;        
+}
+
+#text {
+  color: white;
+  font-weight: bolder;
+}
+
+#div-text button {
+  width: 150px;
+}
+
+/* Hover*/
+
+#know:hover {
+  background-color: orange;
+  border: none;
+}
+
+#div-text:hover #text {
+  color: orange;
+}
+.about img {
+    padding-right: 100px;
+}
+
+.about {
+    padding-top: 40px;
+}
+
+
+
+/* EXPEDITIONNS */
+
+.btn-exp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.btn-exp button {
+    background-color:transparent;
+    width: 150px;
+    border: 1px solid white;
+}
+
+.row {
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.col .card {
+    padding: 30px;
+    border: none;
+}
+
+.col .list-group-item {
+    border: none;
+}
+
+.exp .down button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(80, 80, 227);
+    margin-bottom: 50px;
+}
+/* EXPEDITIONS END */
+
+
+
+
+/* GALLERY */
+
+.gallery h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-top: 20px;
+}
+
+.gallery p {
+    padding-bottom: 20px;
+}
+
+.gallery {
+    text-align: center;
+    padding: 40px;
+    background-color: #000;
+    color: white;
+}
+
+.gallery-img {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    gap: 15px;
+    margin-top: 20px;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.img-1 {
+    grid-column: 1/2;
+    grid-row: 1/ span 2;
+    height: 100%;
+}
+
+.img-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    height: 250px;
+}
+
+.img-3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 250px;
+}
+
+.img-4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    height: 250px;
+}
+
+.gallery-img img:hover {
+    transform: scale(.9);
+    border-radius: 20px;
+}
+
+.gallery-img img {
+    object-fit: cover;
+    transition: 0.4s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    border-radius: 20px;
+}
+
+.gallery button:hover {
+    background-color: rgb(60, 55, 45);
+    border: none;
+}
+/* GALLERY END */
+
+
+/* FAQ */
+
+.faq {
+    margin-top: 50px;
+}
+
+p.subtitle {
+    margin: 5px 0 30px;
+    color: #333;
+    font-size: 14px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+details {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 60px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::after {
+    content: "▾";
+    font-size: 16px;
+    transition: transform 0.10s ease-in-out 0.10s;
+}
+
+details[open] summary::after {
+    transform: rotate(-180deg);
+}
+
+details p {
+    margin-top: 10px;
+    color: #555;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.faq button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(80, 80, 227);
+    margin: 50px;
+}
+/* FAQ ENDING */
+
+
+/* Form With Background Mountain */
+.form {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://github.com/aswathi-48/SeaMonkey/blob/master/image/Dark%20mountain.png?raw=true') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-container {
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.contact-img {
+    flex: 1;
+    background: url('https://aswathi-48.github.io/SeaMonkey/image/Rectangle%2020%20(2).png') no-repeat center center/cover;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    color: white;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+.form-control {
+    background: transparent;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+
+.form-control:focus {
+    background: transparent;
+    box-shadow: none;
+    border-color: #007bff;
+    color: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-custom {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #0056b3;
+}
+/* End Of Form */
+
+
+.footer {
+    background-color: black;
+}
+
+.tab a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.tab {
+    padding: 30px;
+}
+
+/* Whatsapp Icon */
+.sticky {
+    position: fixed;
+    top: 50%;
+    left: 95%;
+}
+
+
+
+                                        /*----media query----*/
+
+                                    /* desktop */
+@media (min-width: 1024px) {
+  .con {
+    margin-top: 200px;
+  }
+  /* Banner */
+.banner {
+  position: relative;
+  background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
+  background-size: cover;
+  background-position: center;
+  min-height: 777px;
+  background-repeat: no-repeat;
+}
+
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 200px;
+}
+#div-text {
+  background-color: rgba(0, 0, 0, 0);
+}
+/* Section-text */
+
+.explore {
+  height: 110px;
+}
+
+.explore h1 {
+  font-size: 80px;
+}
+
+.wild {
+  height: 80px;
+  line-height: normal;
+}
+
+.wild h2 {
+  font-size: 50px;
+}
+
+
+#hr {
+  margin: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: white; 
+  border: none;
+}
+
+}
+
+
+                                  /* Medium screens (tablet) */
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .banner {
+    position: relative;
+    background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
+    background-size: cover;
+    background-position: center;
+    min-height: 777px;
+    background-repeat: no-repeat;
+  }
+
+  .con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+  }
+  #div-text {
+    background-color: black;
+  }
+  #hr { display: none; }
+}
+                                        /* moblie */
+@media (max-width: 767px) {
+    .hr {
+        display: none;
+    }
+
+    /* Navbar Logo */
+    .nav-icon {
+        height: 70px;
+    }
+
+    /* Banner */
+    .banner {
+        position: relative;
+        background-image: url(https://aswathi-48.github.io/SeaMonkey/image/Rectangle%203.gif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 500px;
+    }
+
+    .con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        padding: 15px;
+        margin-top: 40px; 
+        text-align: center;
+    }
+
+    .explore h1 {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+
+    .wild h2 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 481px){
+    .btn-exp {
+        column-gap: 0;
+    }
+
+    .sticky {
+        left: 85%;
+    }
+}
